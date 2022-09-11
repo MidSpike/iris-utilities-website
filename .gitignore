@@ -1,0 +1,11 @@
+# environment variables
+*.env
+
+# git
+.git
+
+# vscode configs
+.vscode
+
+# vscode extensions
+.VSCodeCounter
