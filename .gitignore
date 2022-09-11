@@ -9,3 +9,8 @@
 
 # vscode extensions
 .VSCodeCounter
+
+# runtime generated content
+temporary
+*.css
+*.css.map
