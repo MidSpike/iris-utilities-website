@@ -1,0 +1,17 @@
+{
+  "name": "I.R.I.S. Utilities Website",
+  "short_name": "IRIS Website",
+  "start_url": "https://iris-utilities.com/",
+  "display": "fullscreen",
+  "orientation": "any",
+  "theme_color": "#ff5500",
+  "background_color": "#000000",
+  "description": "I.R.I.S. Utilities is a multi-purpose discord bot that allows you to play music, have fun, manage roles, and do various other utility-related things.",
+  "icons": [
+    {
+      "src": "/assets/visual/logo/logo_t_2020-08-30-1_1024x.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}
