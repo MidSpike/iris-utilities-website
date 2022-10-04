@@ -58,6 +58,26 @@
                             color: var(--theme-accent-inverted);
                             text-decoration: underline;
                         }
+                        details[open] {
+                            border-radius: 1rem;
+                            background-color: var(--theme-primary);
+                            margin-bottom: 1rem;
+                            padding: 1rem;
+                        }
+                        details[open] summary {
+                            border-radius: 1rem;
+                            border: 0.1rem solid var(--theme-accent);
+                            margin-bottom: 1rem;
+                            padding: 0.5rem;
+                        }
+                        summary {
+                            color: var(--theme-accent);
+                            line-height: 1.25em;
+                            margin: 0px 0px 5px 0px;
+                            padding: 0px;
+                            cursor: pointer;
+                            font-size: 1em;
+                        }
                     </style>
                 </template>
             </zero-md>

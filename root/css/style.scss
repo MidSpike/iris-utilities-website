@@ -1,14 +1,14 @@
 $theme-dark-primary: #000000;
 $theme-dark-secondary: #ffffff;
-$theme-dark-primary-ajusted: mix($theme-dark-primary, $theme-dark-secondary, $weight: 80%);
-$theme-dark-secondary-ajusted: mix($theme-dark-primary, $theme-dark-secondary, $weight: 50%);
+$theme-dark-primary-adjusted: mix($theme-dark-primary, $theme-dark-secondary, $weight: 80%);
+$theme-dark-secondary-adjusted: mix($theme-dark-primary, $theme-dark-secondary, $weight: 50%);
 $theme-dark-accent: #ff5500;
 $theme-dark-accent-inverted: invert($theme-dark-accent);
 
 $theme-light-primary: #000000;
 $theme-light-secondary: #ffffff;
-$theme-light-primary-ajusted: mix($theme-light-secondary, $theme-light-primary, $weight: 80%);
-$theme-light-secondary-ajusted: mix($theme-light-secondary, $theme-light-primary, $weight: 50%);
+$theme-light-primary-adjusted: mix($theme-light-secondary, $theme-light-primary, $weight: 80%);
+$theme-light-secondary-adjusted: mix($theme-light-secondary, $theme-light-primary, $weight: 50%);
 $theme-light-accent: #ff5500;
 $theme-light-accent-inverted: invert($theme-light-accent);
 
@@ -21,16 +21,16 @@ $theme-light-accent-inverted: invert($theme-light-accent);
     --nav-height: 60px;
 
     --theme-primary: #{$theme-dark-primary};
-    --theme-primary-ajusted: #{$theme-dark-primary-ajusted};
+    --theme-primary-adjusted: #{$theme-dark-primary-adjusted};
     --theme-secondary: #{$theme-dark-secondary};
-    --theme-secondary-ajusted: #{$theme-dark-secondary-ajusted};
+    --theme-secondary-adjusted: #{$theme-dark-secondary-adjusted};
     --theme-accent: #{$theme-dark-accent};
     --theme-accent-inverted: #{$theme-dark-accent-inverted};
     &[data-theme=light] {
         --theme-primary: #{$theme-light-secondary};
-        --theme-primary-ajusted: #{$theme-light-primary-ajusted};
+        --theme-primary-adjusted: #{$theme-light-primary-adjusted};
         --theme-secondary: #{$theme-light-primary};
-        --theme-secondary-ajusted: #{$theme-light-secondary-ajusted};
+        --theme-secondary-adjusted: #{$theme-light-secondary-adjusted};
         --theme-accent: #{$theme-light-accent};
         --theme-accent-inverted: #{$theme-light-accent-inverted};
     }
@@ -42,13 +42,13 @@ $theme-light-accent-inverted: invert($theme-light-accent);
     height: var(--scrollbar-size);
 }
 ::-webkit-scrollbar-track {
-    background-color: var(--theme-primary-ajusted);
+    background-color: var(--theme-primary-adjusted);
     border: 1px solid var(--theme-primary);
 }
 ::-webkit-scrollbar-thumb,
  ::-webkit-scrollbar-button,
  ::-webkit-scrollbar-corner {
-    background-color: var(--theme-secondary-ajusted);
+    background-color: var(--theme-secondary-adjusted);
 }
 ::-webkit-scrollbar-thumb {
     border: 1px solid var(--theme-primary);
@@ -56,7 +56,7 @@ $theme-light-accent-inverted: invert($theme-light-accent);
 ::-webkit-scrollbar-thumb:horizontal,
  ::-webkit-scrollbar-thumb:vertical,
  ::-webkit-scrollbar-corner {
-    background: var(--theme-secondary-ajusted);
+    background: var(--theme-secondary-adjusted);
 }
 ::-webkit-scrollbar-button {
     background-size: 100% 100%;
@@ -145,7 +145,7 @@ hr {
     margin: 25px auto;
     &.theme-primary {
         border-width: 2px !important;
-        border-color: var(--theme-secondary-ajusted);
+        border-color: var(--theme-secondary-adjusted);
     }
 }
 
@@ -191,7 +191,7 @@ b {
 .nav {
     // background-image: linear-gradient(to right, #000000 0%, #6e2500 calc(var(--nav-height) * 4), #ff5500 calc(100% - var(--nav-height)));
     // background-image: linear-gradient(to right, #000000 0%, #6e2500 200px, #ff5500 calc(100% - 200px), #ff3333 calc(100% - var(--nav-height)));
-    background-color: var(--theme-primary-ajusted);
+    background-color: var(--theme-primary-adjusted);
     color: var(--theme-secondary);
     width: 100%;
     height: var(--nav-height);
@@ -240,7 +240,7 @@ b {
             padding: 15px;
             cursor: pointer;
             &:hover {
-                background-color: var(--theme-secondary-ajusted);
+                background-color: var(--theme-secondary-adjusted);
             }
         }
         .nav-hamburger-icon {
@@ -253,7 +253,7 @@ b {
             padding: 15px;
             cursor: pointer;
             &:hover {
-                background-color: var(--theme-secondary-ajusted);
+                background-color: var(--theme-secondary-adjusted);
             }
         }
     }
@@ -286,7 +286,7 @@ b {
             overflow: hidden;
             .nav-menu-item {
                 --nav-menu-item-height: 50px;
-                background: var(--theme-primary-ajusted);
+                background: var(--theme-primary-adjusted);
                 min-width: 300px;
                 width: auto;
                 max-width: 500px;
@@ -300,7 +300,7 @@ b {
                 &:hover {
                     // background-color: var(--theme-accent);
                     // background: radial-gradient(#ff5500, #ff3333);
-                    background-color: var(--theme-secondary-ajusted);
+                    background-color: var(--theme-secondary-adjusted);
                 }
             }
         }
@@ -335,7 +335,7 @@ b {
         display: flex;
         background-color: var(--theme-primary);
         color: var(--theme-secondary);
-        border: 2px solid var(--theme-secondary-ajusted);
+        border: 2px solid var(--theme-secondary-adjusted);
         border-radius: 20px;
         min-width: 150px;
         // max-width: 500px;
@@ -382,7 +382,7 @@ b {
 
 .section {
     position: relative;
-    background-color: var(--theme-primary-ajusted);
+    background-color: var(--theme-primary-adjusted);
     margin: 20px 10px;
     padding: 20px 15px;
     border-radius: 15px;
@@ -422,7 +422,7 @@ b {
 
 /* Privacy Policy Page */
 .privacy-policy-container--bad-adblock {
-    background-color: var(--theme-primary-ajusted);
+    background-color: var(--theme-primary-adjusted);
     max-width: 1200px;
     margin: auto;
     padding: 15px;
@@ -430,7 +430,7 @@ b {
 
 /* Cookie Policy Page */
 .cookie-policy-container--bad-adblock {
-    background-color: var(--theme-primary-ajusted);
+    background-color: var(--theme-primary-adjusted);
     max-width: 1200px;
     margin: auto;
     padding: 15px;
