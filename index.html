@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" />
         <link rel="stylesheet" href="/root/css/style.css" />
         <script src="https://use.fontawesome.com/releases/v5.13.1/js/all.js" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
         <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
         <script src="/root/js/script.js"></script>
@@ -143,29 +143,24 @@
                         <h3>What is I.R.I.S. Utilities?</h3>
                         <p>I.R.I.S. Utilities is a multi-purpose discord bot that allows you to play music, have fun, manage roles, and do various other utility-related things.</p>
                     </section>
-                    <!-- <hr> -->
                     <section class="section">
                         <h3>What does "I.R.I.S." stand for?</h3>
                         <p>I.R.I.S. is the <u>I</u>nteractive <u>R</u>econnaissance <u>I</u>nformation <u>S</u>ervice and she's here to help.</p>
                     </section>
-                    <!-- <hr> -->
                     <section class="section">
                         <h3>Why is I.R.I.S. Utilities a "she"?</h3>
                         <p>I.R.I.S. originally did not have a gender until a growing number of users started calling I.R.I.S. by feminine pronouns.</p>
                     </section>
-                    <!-- <hr> -->
                     <section class="section">
                         <h3>How do I use I.R.I.S. Utilities?</h3>
                         <p>You can see a list of possible commands by doing <code>/help</code>.</p>
                     </section>
-                    <!-- <hr> -->
                     <section class="section">
                         <h3>Is I.R.I.S. Utilities online right now?</h3>
                         <p>Try <code>@mentioning</code> I.R.I.S. Utilities to see if she is online right now.</p>
                         <p>When I.R.I.S. is offline, there is usually a very good reason for it!</p>
                         <p>99.9% of outages will be for scheduled updates!</p>
                     </section>
-                    <!-- <hr> -->
                     <section class="section">
                         <h3>Who was I.R.I.S. Utilities created by?</h3>
                         <p>I.R.I.S. Utilities was created by Tyler Resch (aka MidSpike) over at <a class="link" href="https://MidSpike.Com/" target="_blank">https://MidSpike.Com/</a></p>
@@ -173,23 +168,5 @@
                 </section>
             </section>
         </main>
-        <script async="async">
-            if ('serviceWorker' in navigator) {
-                console.log('Service Worker: Service workers are supported');
-
-                window.addEventListener('load', () => {
-                    navigator.serviceWorker.register('/service_worker.js', {
-                        scope: 'https://iris-utilities.com/',
-                    }).then(registration => {
-                        console.log('Service Worker: Success'/*, registration.scope*/);
-                        registration.update();
-                    }).catch(error => {
-                        console.error('Service Worker: Failure', error);
-                    });
-                });
-            } else {
-                console.warn('Service Worker: Service workers are not supported!');
-            }
-        </script>
     </body>
 </html>
